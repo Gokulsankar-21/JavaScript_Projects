@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e74c3c;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 
+.center-line-1 {
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    border-right: 2px solid red;
+}
+
+.center-line-2 {
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    border-bottom: 2px solid rgb(0, 98, 255);
+    top: 50%;
+} */
+
+.analog-clock {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 15px ridge var(--primary-color);
+    position: relative;
+    font-family: 'Dosis', sans-serif;
+}
+
+.analog-clock::before {
+    content: 'Ajanta';
+    color: var(--primary-color);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.analog-clock::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    position: absolute;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.number {
+    --rotation: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    transform: rotate(var(--rotation));
+    /*1hr gap = 30deg*/
+}
+
+.number-1 {
+    --rotation: 30deg;
+}
+
+.number-2 {
+    --rotation: 60deg;
+}
+
+.number-3 {
+    --rotation: 90deg;
+}
+
+.number-4 {
+    --rotation: 120deg;
+}
+
+.number-5 {
+    --rotation: 150deg;
+}
+
+.number-6 {
+    --rotation: 180deg;
+}
+
+.number-7 {
+    --rotation: 210deg;
+}
+
+.number-8 {
+    --rotation: 240deg;
+}
+
+.number-9 {
+    --rotation: 270deg;
+
+}
+
+.number-10 {
+    --rotation: 300deg;
+
+}
+
+.number-11 {
+    --rotation: 330deg;
+
+}
+
+.number-12 {
+    --rotation: 0deg;
+
+}
+
+.needle {
+    --rotation-2: 0;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotation-2)*1deg));
+    transform-origin: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
+    z-index: 9;
+}
+
+.hrs {
+    width: 10px;
+    height: 23%;
+    background: #000;
+    --rotation-2: 0;
+}
+
+.min {
+    width: 7px;
+    height: 34%;
+    background: #000;
+    --rotation-2: 30;
+}
+
+.sec {
+    width: 3px;
+    height: 39%;
+    background: var(--primary-color);
+    --rotation-2: 30;
+}
+
+.quotes {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: var(--primary-color);
+    text-align: center;
+    top: 65%;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: 1;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}

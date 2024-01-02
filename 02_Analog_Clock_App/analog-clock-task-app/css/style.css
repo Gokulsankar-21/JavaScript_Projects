@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    background-color: #ecf0f1;
+}
+
+.analog-clock {
+    width: 600px;
+    height: 600px;
+    border: 3px solid #000000bc;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+    z-index: 9999;
+    /*1*/
+}
+
+.number {
+    --rotation: 0deg;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* border: 1px solid red; */
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.number-2 {
+    --rotation: 60deg;
+}
+
+.number-1 {
+    --rotation: 30deg;
+}
+
+.number-3 {
+    --rotation: 90deg;
+}
+
+.number-4 {
+    --rotation: 120deg;
+}
+
+.number-5 {
+    --rotation: 150deg;
+}
+
+.number-6 {
+    --rotation: 180deg;
+}
+
+.number-7 {
+    --rotation: 210deg;
+}
+
+.number-8 {
+    --rotation: 240deg;
+}
+
+.number-9 {
+    --rotation: 270deg;
+}
+
+.number-10 {
+    --rotation: 300deg;
+}
+
+.number-11 {
+    --rotation: 330deg;
+}
+
+.number-12 {
+    --rotation: 0deg;
+}
+
+.layer-1,
+.layer-2 {
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    border: 3px solid #000000bc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.layer-1 {
+    z-index: 77;
+    /*3*/
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform-origin: left center;
+    /* cleared*/
+}
+
+.layer-1 .line {
+    border-left: 5px solid #000;
+}
+
+
+.thick_line-1 {
+    transform: rotate(0deg);
+}
+
+.thick_line-2 {
+    transform: rotate(30deg);
+}
+
+.thick_line-3 {
+    transform: rotate(60deg);
+}
+
+.thick_line-4 {
+    transform: rotate(90deg);
+}
+
+.thick_line-5 {
+    transform: rotate(120deg);
+}
+
+.thick_line-6 {
+    transform: rotate(150deg);
+}
+
+.thick_line-7 {
+    transform: rotate(180deg);
+}
+
+.thick_line-8 {
+    transform: rotate(210deg);
+}
+
+.thick_line-9 {
+    transform: rotate(240deg);
+}
+
+.thick_line-10 {
+    transform: rotate(270deg);
+}
+
+.thick_line-11 {
+    transform: rotate(300deg);
+}
+
+.thick_line-12 {
+    transform: rotate(330deg);
+}
+
+
+/*------layer-2------- */
+.layer-2 .line {
+    z-index: 99;
+    /*2*/
+    --rotation: 0;
+    border-left: 2px solid #000;
+    background-color: var(--rotation);
+    transform: rotate(calc(var(--rotation)*1deg));
+}
+
+.layer-2 .thin__line-1 {
+    --rotation: 6;
+}
+
+.layer-2 .thin__line-2 {
+    --rotation: 12;
+}
+
+.layer-2 .thin__line-3 {
+    --rotation: 18;
+}
+
+.layer-2 .thin__line-4 {
+    --rotation: 24;
+}
+
+.layer-2 .thin__line-5 {
+    --rotation: 30;
+}
+
+.layer-2 .thin__line-6 {
+    --rotation: 36;
+}
+
+.layer-2 .thin__line-7 {
+    --rotation: 42;
+}
+
+.layer-2 .thin__line-8 {
+    --rotation: 48;
+}
+
+.layer-2 .thin__line-9 {
+    --rotation: 54;
+}
+
+.layer-2 .thin__line-10 {
+    --rotation: 60;
+}
+
+.layer-2 .thin__line-11 {
+    --rotation: 66;
+}
+
+.layer-2 .thin__line-12 {
+    --rotation: 72;
+}
+
+.layer-2 .thin__line-13 {
+    --rotation: 78;
+}
+
+.layer-2 .thin__line-14 {
+    --rotation: 84;
+}
+
+.layer-2 .thin__line-15 {
+    --rotation: 90;
+}
+
+.layer-2 .thin__line-16 {
+    --rotation: 96;
+}
+
+.layer-2 .thin__line-17 {
+    --rotation: 102;
+}
+
+.layer-2 .thin__line-18 {
+    --rotation: 108;
+}
+
+
+.layer-2 .thin__line-19 {
+    --rotation: 114;
+}
+
+.layer-2 .thin__line-20 {
+    --rotation: 120;
+}
+
+.layer-2 .thin__line-21 {
+    --rotation: 126;
+}
+
+.layer-2 .thin__line-22 {
+    --rotation: 132;
+}
+
+.layer-2 .thin__line-23 {
+    --rotation: 138;
+}
+
+.layer-2 .thin__line-24 {
+    --rotation: 144;
+}
+
+.layer-2 .thin__line-25 {
+    --rotation: 150;
+}
+
+.layer-2 .thin__line-26 {
+    --rotation: 156;
+}
+
+.layer-2 .thin__line-27 {
+    --rotation: 162;
+}
+
+.layer-2 .thin__line-28 {
+    --rotation: 168;
+}
+
+.layer-2 .thin__line-29 {
+    --rotation: 174;
+}
+
+.layer-2 .thin__line-30 {
+    --rotation: 180;
+}
+
+.analog-clock::after {
+    content: '';
+    position: absolute;
+    /* border-radius: 50%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+/*inga needls only rotate */
+
+.needle {
+    position: absolute;
+    width: 75px;
+    height: 35%;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+}
+
+.needle-hrs {
+    z-index: 0;
+    --rotation: 125;
+    transform: translate(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.needle-min {
+    --rotation: 0;
+    z-index: 80;
+    transform: translate(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.needle-sec {
+    --rotation: 0;
+    z-index: 100;
+    transform: translate(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.needle>.hrs {
+    width: 60%;
+    height: 100%;
+    background-image: url(../images/hrs-hand.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -19.5%;
+    left: 50%;
+    border: 1px solid transparent;
+    transform: translate(-50%);
+
+}
+
+.needle .min {
+    width: 60%;
+    height: 113%;
+    background-image: url(../images/min-hand.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid transparent;
+}
+
+
+.needle .sec {
+    position: absolute;
+    width:3px;
+    height: 146%;
+    background-color: red;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%);
+    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+}
+.needle .sec::after{
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+
+
+
+
+/*
+    Note:
+        .thin__line-1 nu kudutha varala
+        but .layer-2 .thin__line-1 kudutha style apply aguthu
+        Why?
+    Note-2:
+        inset / outset theva iruku
+*/

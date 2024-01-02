@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+/* 
+ */
+
+/* Mobile First Design */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background-1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    /* border: 1px solid red; */
+    padding: 15px;
+    text-align: center;
+}
+
+.counter__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.counter__content h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.counter__content h1 {
+    font-family: 'Inspiration', cursive;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.conuter__timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conuter__timer .box {
+    width: 50px;
+    height: 50px;
+}
+
+.box h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Responsive Web Dsign */
+@media screen and (min-width:768px) {
+
+    /* Mobile:Landscape | Tab:Horizondal */
+    .counter__content {
+        margin-bottom: 30px;
+    }
+
+    .counter__content h3 {
+        font-size: 18px;
+    }
+
+    .counter__content h1 {
+        font-size: 90px;
+    }
+
+    .conuter__timer {
+        gap: 30px;
+    }
+
+    .conuter__timer .box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .box h2 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .box p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+
+    /* Tab:Landscape | Laptop:Normal Size */
+    .counter__content {
+        margin-bottom: 40px;
+    }
+
+    .counter__content h3 {
+        font-size:23px;
+    }
+
+    .counter__content h1 {
+        font-size: 140px;
+    }
+
+    .conuter__timer {
+        gap: 45px;
+    }
+
+    .conuter__timer .box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .box h2 {
+        font-size: 45px;
+    }
+
+    .box p {
+        font-size: 20px;
+    }
+}
+/* Done */

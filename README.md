@@ -4,8 +4,8 @@
 
 2. ### Analog Clock APP
 
->   - Analog Clock App 1 **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-1/)**
->   - Analog Clock App 2 **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-2/)**
->   - Analog Clock App 3 **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-task-app/)** 
+>   -  **Analog Clock App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-1/)**
+>   -  **Analog Clock App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-2/)**
+>   -  **Analog Clock App 3 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-task-app/)** 
 
 

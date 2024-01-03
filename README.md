@@ -2,7 +2,8 @@
 
 1. ### Countdown Timer App  **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/01_Countdown_Timer_App/)**
 
-2. ### Analog Clock APP
+
+3. ### Analog Clock APP
 
 >   -  **Analog Clock App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-1/)**
 >   -  **Analog Clock App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/02_Analog_Clock_App/analog-clock-app-2/)**

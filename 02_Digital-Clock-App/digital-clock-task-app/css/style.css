@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: digital-7;
+    src: url(./digital-7.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: #dff9fb;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.container {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(125, 134, 126, 0.655);
+    border: 30px solid #111;
+    border-radius: 60px;
+    user-select: none;
+}
+
+/* upperscreen */
+.upper__screen {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.upper__screen .days {
+    flex-basis: 15%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.days h5 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Clock */
+.upper__screen .clock {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 220px;
+    height: 100%;
+    flex-basis: 72%;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+    line-height: 85%;
+}
+
+.clock div {
+    font-family: digital-7;
+}
+
+.clock .h,
+.clock .m {
+    width: 90px;
+}
+
+.clock .sec {
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    right: 130px;
+    font-size: 90px;
+    font-family: digital-7;
+    z-index: 1;
+}
+
+/* Calender */
+.upper__screen .calender {
+    flex-basis: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 70%;
+}
+
+.calender img {
+    width: 55px;
+}
+
+.calender .fa-calendar-check {
+    font-size: 45px;
+}
+
+.calender .periods {
+    font-size: 90px;
+    font-family: digital-7;
+    justify-self: self-end;
+    margin-bottom: -15px;
+}
+
+/* lowerscreen */
+.lower__screen {
+    width: 100%;
+    height: 32%;
+    display: flex;
+    border-top: 4px solid #000;
+}
+
+/* month date */
+.lower__screen .month__date {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 32%;
+    border-right: 4px solid #000;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.month__date .month h3,
+.month__date .date h3,
+.temperature h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.medium__digits span {
+    display: inline-block;
+    font-family: digital-7;
+    font-size: 90px;
+    font-weight: 500;
+}
+
+/* temparature */
+.lower__screen .temperature {
+    flex-basis: 26%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    border-right: 4px solid #000;
+
+}
+
+.temperature__details {
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+.temperature__details .celcius {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.celcius small {
+    display: inline-block;
+    font-family: digital-7;
+    font-size: 33px;
+    align-self: flex-end;
+}
+
+/* alarm */
+.lower__screen .alarm {
+    flex-basis: 42%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alarm .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.box .alarm__logo {
+    display: flex;
+    gap: 10px;
+}
+
+.box .alarm__logo img {
+    width: 27px;
+}
+
+.alarm__logo p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box .alarm__time {
+    display: flex;
+}
+
+.alarm__time span {
+    display: inline-block;
+    font-family: digital-7;
+    font-size: 35px;
+    font-weight: 500;
+}
+/* Done-Remaining iruku */

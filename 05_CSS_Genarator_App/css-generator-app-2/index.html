@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project - css generator-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tool">
+            <div class="tool__heading">
+                <h3>Box Shandow Options</h3>
+            </div>
+            <div class="tool__options">
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>Horizondal Shadow Length</p>
+                        <span id="hori_txt">10px</span>
+                    </div>
+                    <input type="range" id="horizondal" class="range_tool" min="-100" max="100" value="5">
+                </div>
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>Vertical Shadow Length</p>
+                        <span id="verti_txt">10px</span>
+                    </div>
+                    <input type="range" id="vertical" class="range_tool" min="-100" max="100" value="5">
+                </div>
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>Blur Radius</p>
+                        <span id="blur_txt">10px</span>
+                    </div>
+                    <input type="range" id="blur" class="range_tool" min="0" max="100" value="5">
+                </div>
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>Spread Radius</p>
+                        <span id="spread_txt">10px</span>
+                    </div>
+                    <input type="range" id="spread" class="range_tool" min="-100" max="100" value="5">
+                </div>
+
+                <div class="form-group">
+                    <div class="inner_content flex-col">
+                        <p>Shadow Color</p>
+                        <input type="color" id="shadow_col" rgba>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>Shadow Color Opacity</p>
+                        <span id="op_txt">1</span>
+                    </div>
+                    <input type="range" id="shadow_col_op" class="range_tool" min="0" max="100" value="70">
+                    <!-- min-0 and max-100 => namaku 100 options iruku-->
+                </div>
+                <div class="form-group">
+                    <div class="inner_content">
+                        <p>inset</p>
+                        <button id="inset_btn" class="range_tool">Off</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-shadow">
+            <div id="output">
+                <div id="output_box"></div>
+            </div>
+            <textarea id="code_box" spellcheck='false'></textarea>
+            <button id="btn_copy">copy</button>
+            <div id="other_content" class="other_content">
+                <p>A box-shodaow CSS generator that helps you quickly generate box-shadow CSS declarations for your
+                websites.</p>
+                <p>it Comes with many options and it demonstrates instantly. </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    New Learning:
+        spellcheck
+    feature to be implement : input style
+ -->
+ <!-- done -->

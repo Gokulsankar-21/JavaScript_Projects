@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #ea2027;
+  --secondary-color: #ff6348;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  overflow-x: hidden;
+}
+
+span {
+  display: block;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+input{
+    cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+.tool {
+  flex-basis: 35%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #0000001d;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(214, 197, 197, 1);
+}
+
+.tool__heading {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tool__options {
+  margin: 10px;
+  border: 1px solid #0000001d;
+  border-radius: 5px;
+}
+
+.form-group {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #0000001d;
+}
+
+.inner_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+  align-items: normal;
+  gap: 5px;
+}
+
+#shadow_col {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border: 1px solid #0000001d;
+  background-color: rgba(233, 237, 242, 0.808);
+  cursor: pointer;
+}
+
+.inner_content p {
+  font-size: 15px;
+  color: #000000aa;
+  letter-spacing: 1px;
+}
+.inner_content p::first-letter{
+    text-transform: uppercase;
+}
+
+input[type="range"] {
+  width: 80%;
+  margin: auto;
+}
+
+#inset_btn {
+  width: 60px;
+  height: 35px;
+  font-family: "Roboto", sans-serif;
+  color: #0000009a;
+  background-color: rgba(146, 155, 166, 0.659);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-right: 15px solid #dfe4ea;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#inset_btn.active {
+  background-color: red;
+  color: #fff;
+}
+
+#inset_btn:hover {
+  transform: translateY(2px);
+}
+
+.box-shadow {
+  flex-basis: 55%;
+  height: 100%;
+  border: 1px solid #0000001d;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 0px 0px rgba(214, 197, 197, 1);
+  border-radius: 5px;
+}
+
+#output {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#output_box {
+  width: 350px;
+  height: 200px;
+  background-color: var(--primary-color);
+}
+
+textarea {
+  height: 20%;
+  width: 80%;
+  display: block;
+  margin: auto;
+  background-color: rgb(238, 238, 238);
+  resize: none;
+  border: transparent;
+  border-radius: 5px;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  color: #000000af;
+  text-decoration: none !important;
+  pointer-events: none;
+}
+
+#btn_copy {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: -3px 11px 6px -8px rgba(177, 170, 170, 1);
+  transition: transform 0.3s;
+}
+
+#btn_copy:hover{
+    transform: scale(1.05);
+}
+
+#other_content {
+  height: 10%;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+#other_content p:first-child {
+  /*pseudo class*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#other_content::first-line {
+  /*pseudo element*/
+  color: var(--secondary-color);
+}
+#other_content::first-letter {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .tool {
+   flex-basis: 80%;
+   height: 100%;
+  }
+  .box-shadow {
+   flex-basis: 80%;
+    height: 100%;
+  }
+}
+
+/*
+    New Learnings:
+        pseudo class - event based
+        pseudo element - virstual element in DOM/ to add html element/css styling
+
+    Every elements/ pseudo class/ pseudo element is used to for thier specific environment
+    Source: logrocket
+
+*/
+
+/* done */

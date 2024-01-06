@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8EFBA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#container {
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.form-group {
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+label {
+    cursor: pointer;
+}
+
+#output {
+    width: 60%;
+    padding: 3px 5px;
+}
+
+#length {
+    width: 40%;
+}
+
+input {
+    padding: 2px 5px;
+    font-size: 18px;
+    border: 2px solid #130f40;
+    outline: transparent;
+    border-radius: 5px;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+button,
+input[type=button] {
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: #fa983a;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+}

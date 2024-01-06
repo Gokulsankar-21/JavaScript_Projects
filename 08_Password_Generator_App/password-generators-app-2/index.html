@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project - password generators app-2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <form action="#" id="form">
+            <h2>Password Generators</h2>
+            <div class="form-group">
+                <input type="text" id="output" placeholder="your password">
+                <button id="btn-copy" type="button">copy</button>
+            </div>
+            <div class="form-group">
+                <label for="length">Length:</label>
+                <input type="number" id="length" min="6" value="8">
+            </div>
+            <div class="form-group">
+                <p>Options:</p>
+            </div>
+            <div class="form-group">
+                <label for="capital">Include capital</label>
+                <input type="checkbox"  id="capital">
+            </div>
+            <div class="form-group">
+                <label for="number">Include number</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="form-group">
+                <label for="symbol">Include symbol</label>
+                <input type="checkbox" id="symbol">
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="generate_password">Generate Password</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

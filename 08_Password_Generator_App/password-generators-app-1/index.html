@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project - password generators app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Password generators</h2>
+        <form action="#" id="form">
+            <div class="form-group">
+                <input type="text" id="output">
+                <button id="copy" type="button">copy</button>
+            </div>
+            <div class="form-group">
+                <label for="length">password length</label>
+                <input type="number" id="length" min=06>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">numbers</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="capital">
+                <label for="capital">capital letters</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="small">
+                <label for="small">small letters</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="symbol">
+                <label for="symbol">symbol</label>
+            </div>
+            <div class="form-group">
+               <button id="generate_password" type="submit">generate password</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/script.js">
+
+    </script>
+</body>
+</html>
+
+<!-- Mistakes:
+        input type=text => number varanaum 
+
+-->

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript project - product slider app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="card-left">
+            <div class="main-image">
+                <img src="./images/1.jpg" alt="image-1">
+                <img src="./images/2.jpg" alt="image-2">
+                <img src="./images/3.jpg" alt="image-3">
+                <img src="./images/4.jpg" alt="image-4">
+            </div>
+            <div class="img-select">
+                <a href="#" data-id=1><img src="./images/1.jpg" alt="image-1"></a>
+                <a href="#" data-id=2><img src="./images/2.jpg" alt="image-2"></a>
+                <a href="#" data-id=3><img src="./images/3.jpg" alt="image-3"></a>
+                <a href="#" data-id=4><img src="./images/4.jpg" alt="image-4"></a>
+            </div>
+        </div>
+        <div class="card-right">
+            <h2>Canon EOS 1500D</h2>
+            <div class="reviews">
+                <div class="star-group">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <div class="reviews-count">
+                    <p>3 Reviews</p>
+                </div>
+            </div>
+            <div class="product-price">
+                <h4>$39.00 <span>$50.00</span></h4>
+            </div>
+            <div class="product-details">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium optio, necessitatibus deserunt
+                    eius perferendis dolore pariatur rerum aliquam ducimus, id hic voluptas odio quae repellat.</p>
+            </div>
+            <form id="form">
+                <div class="color-group">
+                    <label>color</label>
+                    <select>
+                        <option value="Black">Black</option>
+                    </select>
+                </div>
+                <div class="qty-group">
+                    <label>Qty</label>
+                    <div class="input-group">
+                        <button class="minus">-</button>
+                        <input type="text" id="qty" value="1">
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+
+            </form>
+            <button class="add-to-cart">Add Cart</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+<!-- done -->
+
+
+<!-- Mistakes:
+    img-select la image src ah mathala
+    athuku data attribute podala
+
+    <a> ku attribute podala 
+    product-price podala
+    label podala
+    option la black podala
+
+    - button la plus nu class panniten
+    ithe thaan plush button la minus nu class add paniten
+    consious ilama irunthen
+
+-->

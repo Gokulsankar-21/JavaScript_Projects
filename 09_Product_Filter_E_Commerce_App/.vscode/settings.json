@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.wait": 100,
+    "liveServer.settings.mount": [
+
+    ],
+    "liveServer.settings.ignoreFiles": [
+
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+    "liveServer.settings.fullReload": true
+}

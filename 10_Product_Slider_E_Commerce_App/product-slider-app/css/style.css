@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bdc3c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 1100px;
+    height: 490px;
+    background-color: #fff;
+    display: flex;
+    gap: 10px;
+
+    padding: 10px;
+}
+
+.card-left {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.main-image {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.img-select {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+}
+
+.img-select img {
+    border: 2px solid #fff;
+}
+
+.img-select img:hover {
+    border-color: #000;
+}
+
+.card-right {
+    width: 40%;
+    padding: 10px;
+}
+
+.card-right h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.card-right .reviews {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reviews .star-group {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.reviews-count {
+    font-size: 18px;
+}
+
+.star-group ion-icon {
+    cursor: pointer;
+    color: #bdc3c7;
+}
+
+.star-group ion-icon:nth-child(1),
+.star-group ion-icon:nth-child(2),
+.star-group ion-icon:nth-child(3) {
+    color: gold;
+}
+
+.product-price h4 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-price h4 span {
+    text-decoration: line-through;
+    color: #bdc3c7;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #838383;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#form {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.color-group select {
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    padding: 2px 5px;
+}
+
+.qty-group button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.minus {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.plus {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.input-group {
+    display: inline-flex;
+}
+
+.input-group input {
+    width: 50px;
+    text-align: center;
+    outline: none;
+}
+
+.add-to-cart {
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    background-color: #FF6D00;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    box-shadow: 0px 0px 3px #FF6D00;
+}
+
+@media screen and (max-width:1200px) {
+
+    #container {
+        width: 100%;
+        height: 380px;
+    }
+
+    .card-left {
+        width: 60%;
+        height: 100%;
+    }
+
+    .img-select {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .card-right h2 {
+        font-size: 20px;
+    }
+
+    .card-right .reviews {
+
+        margin-bottom: 10px;
+    }
+
+    .reviews .star-group {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .reviews-count {
+        font-size: 16px;
+    }
+
+    .product-price h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .product-details p {
+        font-size: 14px;
+    }
+
+    #form {
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        width: 130px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #container {
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #fff;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* done */
+
+/* Mistakes:
+    reviews and product-details la mistake
+*/

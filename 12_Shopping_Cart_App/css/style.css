@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #353b48;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #ff3f34;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* need explain*/
+    align-items: center;
+    height: 100%;
+}
+
+.title-box {
+    display: flex;
+    gap: 5px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.title {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.cart-box {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position: relative;
+
+}
+
+#cart-icon {
+    font-size: 2rem;
+    padding-top: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #2f3640;
+    top: -8px;
+    right: 2px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 50px;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.food-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.food-item {
+    padding: .5rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.pic {
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.food-img {
+    aspect-ratio: 1/1;
+    transition: 0.3s;
+}
+
+.food-img:hover {
+    transform: scale(1.2);
+}
+
+.food-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ff3f34;
+    margin-bottom: 5px;
+}
+
+.food-price {
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: #26de81;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-to-cart ion-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3f34;
+    color: #fff;
+}
+
+.cart-menu {
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    padding: 0.5rem;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+}
+
+.cart-menu.cart-active {
+    right: 0;
+}
+
+.cart-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-img {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-details {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-title {
+    text-transform: uppercase;
+    color: #ff3f34;
+}
+
+.cart-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.default-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    width: 2.5rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.cart-remove {
+    font-size: 1.2rem;
+    color: #ff3f34;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.total-title {
+    font-weight: 500;
+}
+
+.btn-order {
+    outline: none;
+    border: none;
+    background-color: #2f3640;
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.6rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.btn-close ion-icon {
+    cursor: pointer;
+}
+
+.btn-close ion-icon:hover {
+    border: 1px solid #535c68;
+    border-radius: 50%;
+}
+
+/* done */

@@ -12,11 +12,12 @@
 
 > - **Analog Clock App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/03_Analog_Clock_App/analog-clock-app-1/)**
 > - **Analog Clock App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/03_Analog_Clock_App/analog-clock-app-2/)**
-> - **Analog Clock App 3* [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/03_Analog_Clock_App/analog-clock-task-app/)**
+> - **Analog Clock App 3 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/03_Analog_Clock_App/analog-clock-task-app/)**
 
-4. ### CSS Generator App* **[Click here](https://gokulsankar-21.github.io/JavaScript_Projects/04_Stop_Clock_App/stop-clock-app-1/)** 
+4. ### Stop Clock App *Pending*
+5. ### CSS Generator App **[Click here](https://gokulsankar-21.github.io/JavaScript_Projects/04_Stop_Clock_App/stop-clock-app-1/)** 
 
-5. ### Sticky Notes App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/05_CSS_Genarator_App/css-generator-app-1/)**
+6. ### Sticky Notes App **[Click Here]**
 
 7. ### Photo Gallery App
 

@@ -16,7 +16,7 @@
 
 4. ### CSS Generator App* **[Click here](https://gokulsankar-21.github.io/JavaScript_Projects/04_Stop_Clock_App/stop-clock-app-1/)** 
 
-6. ### Sticky Notes App
+5. ### Sticky Notes App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/05_CSS_Genarator_App/css-generator-app-1/)**
 
 7. ### Photo Gallery App
 

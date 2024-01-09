@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #f9ca24;
+    box-shadow: 0 0 0 2px #f9ca24;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+#status {
+    margin: 10px 0;
+    padding: 7px 15px;
+    font-size: 25px;
+}
+
+#restart {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #ff4757;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+/* Player Animation - X's and O's */
+
+.player-animation {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: player_animation 0.2s ease-in 0s 1 forwards;
+}
+
+@keyframes player_animation {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Winning Animation */
+.win {
+    animation: winGame ease-in-out 1s infinite forwards;
+}
+
+@keyframes winGame {
+    0% {
+        background-color: #192a56;
+    }
+
+    100% {
+        background-color: #130f40;
+    }
+}
+
+/* Winning/Draw Text Animaton */
+.show-winner,
+.show-draw {
+    animation: show_winner 0.5s linear 0s 1 forwards;
+    color: #32ff7e;
+}
+
+@keyframes show_winner {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(3) translateY(-20%);
+    }
+}
+
+.move {
+    animation: move 0.5s linear 0s 1 forwards;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1) translateY(-20%);
+    }
+}

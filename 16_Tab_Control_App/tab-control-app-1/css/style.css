@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+}
+
+#nav-tab {}
+
+.container #nav-tab li {
+    display: inline-flex;
+
+}
+
+.container #nav-tab li a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s linear;
+}
+
+.container #nav-tab li a:hover,
+#nav-tab li.active a {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+.page {
+    min-width: 800px;
+    min-height: 500px;
+    padding: 10px;
+    border-top: 3px solid #e74c3c;
+    display: none;
+
+}
+
+.page h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.page-active {
+    transition: 0.5s ease-in-out;
+    display: block;
+    animation: fade_tab 0.5s ease-in 0s 1 forwards;
+}
+
+@keyframes fade_tab {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

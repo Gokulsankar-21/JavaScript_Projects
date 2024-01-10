@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #006266;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    /* justify-items: center;
+    align-items: center; */
+    overflow: hidden;
+}
+
+#tab-container {
+    max-width: 500px;
+    height: 300px;
+    background-color: #f1f2f6;
+    padding: 15px 20px;
+}
+
+
+
+#tab-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+#tab-header #tab-list {
+    display: flex;
+    line-height: 40px;
+    list-style: none;
+    /* transform: translate(-100px); */
+    overflow: hidden;
+    /* background: red; */
+    z-index: 10;
+    border: 1px solid red;
+    animation: moving 1s ease-in 0s 2 normal;
+}
+@keyframes moving {
+    from{
+    transition:  ease;
+        
+    }
+    to{
+        transition: ease;
+
+    }
+}
+
+#tab-header #tab-list li {
+    /*id kula nu nama style pandrom so take 1st preference*/
+    /* background: red; */
+}
+
+
+#tab-header li a {
+    display: inline-block;
+    min-width: 90px;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    color: #747d8c;
+    font-weight: 400;
+
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.active a {
+    color: red !important;
+    /* note */
+    border-bottom: 2px solid red !important;
+}
+
+.tabs{
+    overflow: hidden;
+}
+#btn-prev i,
+#btn-next i {
+    width: 30px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    /* background: blue; */
+    font-size: 1.2em;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+
+#tab-content {
+    padding-top: 20px;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #2f3542;
+}
+
+/*
+#tab-content .content {  
+    display: none; 
+}
+    ipdi iruntha take 1st preference 
+    so, nama new ah class ah add panni display:block kuduthalum priorities agathu,
+    because na id kula nu style pandren 
+*/
+.content {
+    display: none;
+}
+
+.content-active {
+    display: block;
+}

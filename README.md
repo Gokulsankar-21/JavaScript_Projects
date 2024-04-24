@@ -37,19 +37,33 @@
 > - **Photo Gallery App  1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/07_Photo_Gallery_App/photo-gallery-app-1)**
 > - **Photo Gallery App  2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/07_Photo_Gallery_App/photo-gallery-app-2)**
 
-10. ### Password Generator App
+8. ### Password Generator App
 
 > - **Password Generator App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/08_Password_Generator_App/password-generators-app-1)**
 > - **Password Generator App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/08_Password_Generator_App/password-generators-app-2)**
 
-11. ### Product Filter App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/09_Product_Filter_E_Commerce_App/)**
+9. ### Product Filter App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/09_Product_Filter_E_Commerce_App/)**
 
 
-12. ### Product Slider App
+10. ### Product Slider App
 
 > - **Product Slider App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/10_Product_Slider_E_Commerce_App/image-slider-task-app)**
 > - **Product Slider App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/10_Product_Slider_E_Commerce_App/product-slider-app)**
 
-14. ### Star Rating App
+11. ### Star Rating App
 
-15. ### Shopping Cart App
+> - **Star Rating App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/11_Star_Rating_App/star-app-ratings-app-1)**
+> - **Star Rating App 2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/11_Star_Rating_App/star-ratings-app-2)**
+>
+
+12. ### Shopping Cart App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/12_Shopping_Cart_App)**
+  
+13. ### 13_QRCode_Generatoe_App_Pending **[Pending]**
+
+14. ### Tic Tac Toe App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/14_Tic_Tac_Toe_App)**
+
+
+15. ### Carousel App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/15_Carousel_App)**
+
+16. ### Tab Control App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/16_Tab_Control_App)**
+

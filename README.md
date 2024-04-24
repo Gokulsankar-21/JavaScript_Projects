@@ -65,5 +65,8 @@
 
 15. ### Carousel App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/15_Carousel_App)**
 
-16. ### Tab Control App **[Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/16_Tab_Control_App)**
+16. ### Tab Control App
+> - **Tab Control App 1 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/16_Tab_Control_App/tab-control-app-1)**
+> - **Tab Control App  2 [Click Here](https://gokulsankar-21.github.io/JavaScript_Projects/16_Tab_Control_App/tab-control-task-app)**
+
 

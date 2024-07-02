@@ -7,8 +7,8 @@ const btnRestart = document.querySelector('#restart');
 
 console.log(boxes, statusTxt, btnRestart);
 
-const x = '<img src="../images/x.png" class="player-animation">'
-const o = '<img src="../images/o.png" class="player-animation">'
+const x = '<img src="../images/x.png" class="player-animation" />'
+const o = '<img src="../images/o.png" class="player-animation" />'
 console.log(x, o);
 
 const win = [
